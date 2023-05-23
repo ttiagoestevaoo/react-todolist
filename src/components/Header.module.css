@@ -1,0 +1,31 @@
+.header {
+    min-height: 20rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--gray-700);
+}
+
+.header img {
+    height: 3.6rem;
+}
+
+.header h1 {
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+}
+
+.header h1 span:first-child {
+    color: var(--blue);
+}
+
+.header h1 span:last-child {
+    color: var(--purple-dark);
+}
+
+.header div {
+    display: flex;
+    align-items: flex-start;
+    gap: .8rem;
+}

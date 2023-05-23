@@ -1,0 +1,86 @@
+.task {
+    padding: 1.6rem;
+    border: 1px solid var(--gray-400);
+    background-color: var(--gray-500);
+    color: var(--white);
+    border-radius: 8px;
+    display: flex;
+    gap: 1.2rem;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    line-height: 1.4;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.taskInput {
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+
+.taskInput input {
+    display: none;
+}
+
+.taskInput label {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskInput label:hover {
+    background-color: var(--gray-400);
+    
+}
+
+.taskInput input:checked + label {
+    background-color: var(--purple-dark);
+    border-color: var(--purple-dark);
+    color: var(--white);
+}
+
+.taskInput input:checked + label:hover {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+.taskDelete {
+    color: var(--gray-300);
+    padding: .2rem;
+    cursor:pointer;
+}
+
+.taskDelete:hover {
+    color: var(--danger);
+    border-radius: 4px;
+    background-color: var(--gray-400);
+}
+
+.taskText {
+    flex: 1;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.taskTextChecked {
+    flex: 1;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-decoration: line-through;
+    color: var(--gray-300);
+}

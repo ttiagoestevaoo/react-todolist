@@ -1,0 +1,57 @@
+.wrapper {
+  background-color: var(--gray-500);
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+}
+
+.appContent {
+  max-width: 74rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2.5rem;
+  width: 100%;
+}
+
+@media (max-width: 48em)  {
+  html {
+      font-size: 57.5%;
+  }
+
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-bottom: 2.4rem;
+  font-weight: bold;
+}
+
+.headerContent div:first-child {
+  color: var(--blue);
+}
+
+.headerContent div:last-child {
+  color: var(--purple-dark);
+}
+
+.headerTask {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.headerTaskQuantity {
+  color: var(--white);
+  font-weight: 1.2rem;
+  background-color: var(--gray-400);
+  padding: .2rem .8rem;
+  border-radius: 20px;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
